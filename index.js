@@ -1,5 +1,9 @@
+//GLOBAL VARIABLES
+
 var dwarves = ["Doc", "Dopey", "Bashful", "Grumpy"];
 var planeteerCalls = ["earth", "wind", "fire", "water", "heart"];
+
+//CREATES A LOOP THAT INCREMENTS THE LENGTH OF THE ARRAY AND PLACES THE ITEMS IN A NEW ARRAY (newDwarfs) AND NUMBERS EACH NAME IN ARRAY.
 
 function dwarfRollCall(dwarves) {
   var newDwarfs = [];
@@ -9,6 +13,7 @@ function dwarfRollCall(dwarves) {
   return newDwarfs.join("");
 }
 
+//CHECKS THE LENGTH OF THE ARRAY, CHANGES EACH INDEX TO UPPERCASE AND ADDS AN !
 function summonCaptainPlanet(planeteerCalls){
   var array = [];
   for (let i=0; i<planeteerCalls.length; i++){
@@ -27,6 +32,7 @@ function longPlaneteerCalls(words) {
   }
 }
 
+//COUNTS ARRAY ITEMS AND REMOVES EACH ONE BY ONE CHECKING IF THE INGREDIENTS ARE A CHEESE OR NOT. 
 function findTheCheese (foods) {
   for (var i=0; i<foods.length; i++){
     foods.shift();
