@@ -14,6 +14,7 @@ function dwarfRollCall(dwarves) {
 }
 
 //CHECKS THE LENGTH OF THE ARRAY, CHANGES EACH INDEX TO UPPERCASE AND ADDS AN !
+
 function summonCaptainPlanet(planeteerCalls){
   var array = [];
   for (let i=0; i<planeteerCalls.length; i++){
@@ -32,18 +33,14 @@ function longPlaneteerCalls(words) {
   }
 }
 
-//COUNTS ARRAY ITEMS AND REMOVES EACH ONE BY ONE CHECKING IF THE INGREDIENTS ARE A CHEESE OR NOT. 
-function findTheCheese (foods) {
-  for (var i=0; i<foods.length; i++){
-    foods.shift();
-    if (foods[i] === "gouda"){
-      return `gouda`;
-    }
-    else if (foods[i] === `cheddar`){
-      return 'cheddar';
+function findTheCheese(foods) {
+  var cheeses =[`cheddar`, `gouda`, `camembert`];
+  for (var i=0; i<cheeses.length; i++){
+    if (foods.includes (cheeses[i])){
+      return cheeses[i];
     }
     else {
       return `no cheese!`;
-      }
+    }
   }
 }
