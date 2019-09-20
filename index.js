@@ -44,3 +44,9 @@ function findTheCheese(foods) {
     }
   }
 }
+
+function wordsWithB(words){
+  var newArr=[]
+  
+  
+}
