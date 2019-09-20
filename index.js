@@ -7,7 +7,7 @@ var planeteerCalls = ["earth", "wind", "fire", "water", "heart"];
 
 function dwarfRollCall(dwarves) {
   var newDwarfs = [];
-  for (var i = 0; i < dwarves.length; i++){
+  for (var i = 0; i < dwarves.length / 2; i++){
     newDwarfs.push(`${i + 1}. ${dwarves[i]} `);
   }
   return newDwarfs.join("");
